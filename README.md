@@ -12,7 +12,7 @@ Through the use of AI agents, noel is able to heuristically evaluate datasets, i
 ## What does noel do?
 noel takes user defined CSV files of customer data, with user supplied context and acting as a collections agent and evaluates them for potential signs of financial stress or ability to pay (ATP) problems. The agent will provide a view of Ability to pay risk (ATP_Risk - True/False), Reasoning behind the decision (Reasoning - string) and a confidence score (0 - 10 on the decision made)
 
-# Why free?
+## Why free?
 Why not? 
 
 The possibilities of AI are transforming many industries - let's not let Credit Management, Credit Risk, Debt and Collections get left behind. With economic conditions as they are, many people are feeling the squeeze, lots are in difficulty for the first time and won't necessarily volunteer that to service providers/creditors until it's late and resolution is a lot more challenging. 
@@ -32,16 +32,16 @@ active_model = 0                                # selected model (0 = chatGPT 3.
 selected_model = model_list[active_model]     
 ```
 
-## chatGPT 3.5 Turbo
+### chatGPT 3.5 Turbo
 Requires a commercial account and API key. This key is pulled from environmental variables - place your API key in a .env file (as show in .env.example). chatGPT charging is on a token-use basis. Make sure you are aware of run costs (though for small/moderate testing these are likely to be low). Evaluation is done server-side at openai.com
 
-## llama (specifically Mistral 7b)
+### llama (specifically Mistral 7b)
 Meta's llama is open-source and can be run locally. For now - this model is Mac only, as it moel relieas on a local ollama server (ollama.ai - please support this project). Evaluation is local and needs a fast machine(!), but has the advantage of running 100% locally and is free.
 
-# Batching
+## Batching
 noel can batch-process. To reduce token usage, a max batch size can be set and processing will be handled in rounds - this is faster and lighter than handling each record in sequence. noel can also start and end as specified points in the dataset - this allows for re-runs of part sets, or for continuation of an aborted run.
 
-# Data
+## Data
 noel can handle variable datasets, but try to keep the number of variables down - data format, input sources, output locations etc are defined in a json file (eg "inputFormat.json") and also allows context to be added to each data characteristic (what does it represent?, how should the agent read it?, what does good/bad look like?, why is it important?)
 
 ```json
@@ -61,11 +61,12 @@ As a minimum, customer information must include a unique reference identifier.
 
 Two simple sample files are provided to illustrate usage and get you started.
 
-# Installation
+## Installation
 
 Open terminal.
 
 ## Clone this GIT
+
 Navigate to or create a suitable directory.
 
 ```commandline
@@ -86,15 +87,18 @@ Windows:
 ```commandline
 venv\Scripts\activate.bat
 ```
+
 Install the required python libs
 ```commandline
 'pip install -r requirements.txt'
 ```
-# Setup environment variables
+
+## Setup environment variables
 Create a ".env" file or rename ".env.example"
 You'll see a placeholder for your chatGPT API key - paste this between the quotes and you're ready to go. It should look something like:
 ```python
 'OPENAI_API_KEY = "Your Key Here"'
 ```
 
-
+## License
+The code in this repository is released under GNU General Public License version 3.0
