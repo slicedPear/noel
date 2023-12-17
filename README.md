@@ -57,16 +57,18 @@ Mac:
 source venv/bin/activate
 ```
 Windows:
-'venv\Scripts\activate.bat
-
+```commandline
+venv\Scripts\activate.bat
+```
 Install the required python libs
+```commandline
 'pip install -r requirements.txt'
-
+```
 # Setup environment variables
 Create a ".env" file or rename ".env.example"
 You'll see a placeholder for your chatGPT API key - paste this between the quotes and you're ready to go. It should look something like:
-
+```python
 'OPENAI_API_KEY = "Your Key Here"'
-
+```
 
 
