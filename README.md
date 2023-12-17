@@ -42,14 +42,20 @@ Open terminal.
 ## Clone this GIT
 Navigate to or create a suitable directory.
 
-'git clone https://github.com/slicedPear/noel.git'
+'''commandline
+git clone https://github.com/slicedPear/noel.git
+'''
 
 Create and activate a virtual environment
 Create:
-'python -m venv venv'
+'''commandline
+python -m venv venv
+'''
 Activate:
 Mac:
-'source venv/bin/activate'
+'''commandline
+source venv/bin/activate
+'''
 Windows:
 'venv\Scripts\activate.bat
 
