@@ -36,7 +36,7 @@ selected_model = model_list[active_model]
 Requires a commercial account and API key. This key is pulled from environmental variables - place your API key in a .env file (as show in .env.example). chatGPT charging is on a token-use basis. Make sure you are aware of run costs (though for small/moderate testing these are likely to be low). Evaluation is done server-side at openai.com
 
 ### llama (specifically Mistral 7b)
-Meta's llama is open-source and can be run locally. For now - this model is Mac only, as it moel relieas on a local ollama server (ollama.ai - please support this project). Evaluation is local and needs a fast machine(!), but has the advantage of running 100% locally and is free.
+Meta's llama is open-source and can be run locally. For now - this model is Mac only, as it moel relieas on a local ollama server ([ollama.ai](https://ollama.ai) - please support this project). Evaluation is local and needs a fast machine(!), but has the advantage of running 100% locally and is free.
 
 ## Batching
 noel can batch-process. To reduce token usage, a max batch size can be set and processing will be handled in rounds - this is faster and lighter than handling each record in sequence. noel can also start and end as specified points in the dataset - this allows for re-runs of part sets, or for continuation of an aborted run.
