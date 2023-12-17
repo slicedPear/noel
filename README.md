@@ -36,7 +36,17 @@ selected_model = model_list[active_model]
 Requires a commercial account and API key. This key is pulled from environmental variables - place your API key in a .env file (as show in .env.example). chatGPT charging is on a token-use basis. Make sure you are aware of run costs (though for small/moderate testing these are likely to be low). Evaluation is done server-side at openai.com
 
 ### llama (specifically Mistral 7b)
-Meta's llama is open-source and can be run locally. For now - this model is Mac only, as it moel relieas on a local ollama server ([ollama.ai](https://ollama.ai) - please support this project). Evaluation is local and needs a fast machine(!), but has the advantage of running 100% locally and is free.
+Meta's llama is open-source and can be run locally. For now - this model is Mac only, as it relies on a local ollama server ([ollama.ai](https://ollama.ai) - please support this project). Evaluation is local and needs a fast machine(!), but has the advantage of running 100% locally and is free.
+
+Download and install ollama, if you wish to utilise this llama models or variants. The noel code is currently configured to use the Mistral 7b model, but ollama supports a range of models - check the website for options and this can be changed in the source, easily. Mistral is (currently) the best performing for the size and memory footprint.
+
+The ollama server will download any models not already held locally on first run - be aware this can take a while, as a typical 7b parameter model is c4.3GB. This can be avoided by opening a terminal window (with the ollama server running in the background) and running the command
+
+```commandline
+ollama run Mistral
+```
+
+and waiting for the download to complete.
 
 ## Batching
 noel can batch-process. To reduce token usage, a max batch size can be set and processing will be handled in rounds - this is faster and lighter than handling each record in sequence. noel can also start and end as specified points in the dataset - this allows for re-runs of part sets, or for continuation of an aborted run.
