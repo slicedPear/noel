@@ -1,7 +1,7 @@
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" height="200px" srcset="https://github.com/slicedPear/noel/assets/153924178/368238c4-2968-46ff-84d8-8444d65f520b">
-    <img alt="logo" height="200px" src="https://github.com/slicedPear/noel/assets/153924178/368238c4-2968-46ff-84d8-8444d65f520b">
+    <source media="(prefers-color-scheme: dark)" height="200px" srcset="https://github.com/slicedPear/noel/assets/153924178/796738d0-4ff9-4268-98da-aa5471da790a">
+    <img alt="logo" height="200px" src="https://github.com/slicedPear/noel/assets/153924178/796738d0-4ff9-4268-98da-aa5471da790a">
   </picture>
 </div>
 
