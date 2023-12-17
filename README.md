@@ -1,4 +1,4 @@
-# noel
+# noel - AI Ability to Pay evaluation model by slicedPear Ltd.
 
 ## What is noel?
 **"noel" is small Christmas gift / toy from Jez Graham and slicedPear Ltd.**
