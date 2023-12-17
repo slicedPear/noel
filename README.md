@@ -61,19 +61,41 @@ As a minimum, customer information must include a unique reference identifier.
 
 Two simple sample files are provided to illustrate usage and get you started.
 
-## Installation
+Point main.py at your chosen inputformat file
+```python
+input_info = "./formatting/inputFormat1"
+```
 
-Open terminal.
+and specify input and output files/locations within the inputformat json file - this allows for rapid switching between datasets. Output locations will be auto-created under *YYYYMMDD* and an auto-iterating output folder of the for *NNN* (eg 001)
+
+```python
+{
+    "name": "ExtendedTest",
+    "source": "./data/samples/sample2.csv",
+    "inputHasHeaders": true,
+    "output Filename": "ATPAssessed_Sample2",
+    "output Location": "./data/output/",
+    "outputHasHeaders": true
+}
+```
+
+## Installation
+Just a few steps to get you up and running with noel.
+
+**Using an open terminal or command line prompt:**
 
 ## Clone this GIT
 
-Navigate to or create a suitable directory.
+Navigate to or create a suitable directory for your local install of the project (the noel subdirectory and structure will be created for you)
 
 ```commandline
 git clone https://github.com/slicedPear/noel.git
 ```
 
+We'd advise using a virtual environment to ensure dependency versions remain aligned and do not conflict with your other projects. 
+
 Create and activate a virtual environment
+
 Create:
 ```commandline
 python -m venv venv
@@ -83,17 +105,19 @@ Mac:
 ```commandline
 source venv/bin/activate
 ```
-Windows:
+Windows (cmd):
 ```commandline
 venv\Scripts\activate.bat
 ```
 
-Install the required python libs
+Dependencies are captured and can be batch installed by issuing the command
 ```commandline
 'pip install -r requirements.txt'
 ```
 
 ## Setup environment variables
+noel pulls from environmental variables for sensitive sources - in this case, your chatGPT key.
+
 Create a ".env" file or rename ".env.example"
 You'll see a placeholder for your chatGPT API key - paste this between the quotes and you're ready to go. It should look something like:
 ```python
