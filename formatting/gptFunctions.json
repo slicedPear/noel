@@ -1,0 +1,29 @@
+[
+    {
+        "type":"function",
+        "function":{
+            "name": "evaluate_ATP",
+            "description": "Assess ability to pay for a given customer",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "customers": {
+                        "type": "array",
+                        "description": "array of individual customers reviewed",
+                        "items":{
+                            "type":"object",
+                            "properties":{
+                                "customer_ref":{"type":"string","description":"Unique customer identifier supplied in source data"},
+                                "ATP_risk":{"type":"boolean","description":"TRUE = Customer may be struggling to pay, FALSE = All other outcomes"},
+                                "Risk_confidence":{"type":"number","description":"limited score from 0 (indicating low confidence) to 10 (indicating high confidence) in the assessment made regarding payment difficulty"},
+                                "reasoning":{"type":"string","description":"Short statement of reasoning for the assessment of ability to pay"}
+                            }
+                        }
+                    }
+                
+                },
+                "required": ["customers","customer_ref","ATP_risk","reasoning"]
+            }
+        }
+    }
+]

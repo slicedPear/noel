@@ -1,0 +1,11 @@
+cutomer_ref,dunning_entries,bureau_arrears,bureau_balance,balance,Notes
+"00001",4,"Yes",£300,£250,"Customer is injured and cannot work. Has made promise to pay on 17/12/2023."
+"00002",4,"Yes",£2500,£180,"Customer is regularly in the debt process. Does not respond to engagement"
+"00003",3,"No",£0,£570,"Customer has requested a payment holiday until 31/12/2023"
+"00004",1,"Yes",£50,£180,"Customer is waiting for benefits to be paid"
+"00005",4,"Yes",£5000,£900,"Customer was aggressive when called. Refuses to pay"
+"00006",2,"No",£0,£230,"Vulnerable customer - housebound"
+"00007",7,"Yes",£700,£624,"Customer was refused a payment arrangement 12/12/2023 due to previous failures"
+"00008",5,"Yes",£500,£220,"Referred to payment support 3rd party. Customer has difficulty making payments"
+"00009",3,"No",£0,£430,"Payment is irregular. Customer denies being in property"
+"00010",6,"Yes",£40,£80,"Customer has repeat debt events and is often late. Complains regularly"

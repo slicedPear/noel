@@ -1,0 +1,40 @@
+{
+    "name": "ExtendedTest",
+    "source": "./data/sample2.csv",
+    "inputHasHeaders": true,
+    "fields":[
+        {
+            "name": "customer_ref",
+            "type": "string",
+            "desc": "5 digit unique customer reference number which must remain with the customer and is used to identify them"
+        },
+        {
+            "name": "dunning_entries",
+            "type": "number",
+            "desc": "count of previous times in collections. "
+        },
+        {
+            "name": "bureau_arrears",
+            "type": "string",
+            "desc": "the customer's debt status with other lenders - Customers who are struggling will probably be struggling with other payments as well"
+        },        
+        {
+            "name": "bureau_balance",
+            "type": "number",
+            "desc": "total value of debts owed to other creditors"
+        },
+        {
+            "name": "balance",
+            "type": "number",
+            "desc": "Total Value of debt owed"
+        },
+        {
+            "name": "notes",
+            "type": "string",
+            "desc": "notes made by agents relating to the customer and their account including any recent interactions"
+        }
+    ],
+    "output Filename": "ATPAssessed_Sample2",
+    "output Location": "./data/output/",
+    "outputHasHeaders": true
+}
