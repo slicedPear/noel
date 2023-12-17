@@ -1,6 +1,6 @@
 {
     "name": "ExtendedTest",
-    "source": "./data/sample2.csv",
+    "source": "./data/samples/sample2.csv",
     "inputHasHeaders": true,
     "fields":[
         {

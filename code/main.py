@@ -15,14 +15,14 @@ model_header = "noel - A little Festive Toy from Jez Graham / slicedPear Ltd - D
     "AI supported, 'agent-style' evaluation of customer data for potential financial difficulties/Ability to pay problems\n"
 receipt_name = "noelRunReceipt.txt"
 
-input_info = "./formatting/inputFormat5"        # Source input controls. Describe data-file contents and provide context to the agent here. (JSON format)
+input_info = "./formatting/inputFormat1"        # Source input controls. Describe data-file contents and provide context to the agent here. (JSON format)
 
 # List of model variations (chatGPT - hosted, Llama - local)
 # 2 model interfaces implemented:
 # 1. ChatGPT 3.5 Turbo - Requires premium subscription and API key. Processing is openai server-side
 # 2. llama (Mistral 7b) - Local processing with support from ollama (ollama.ai - please support!) - Mac only for now.
 model_list = ["gpt","llama"]                    
-active_model = 1                                # selected model (1 = chatGPT 3.5 Turbo, 2 = llama/Mistral)
+active_model = 0                                # selected model (0 = chatGPT 3.5 Turbo, 1 = llama/Mistral)
 selected_model = model_list[active_model]       
 max_batch = 5                                   # Query batching - to avoid token limits, queries are batched to a max-size and auto-compiled at endpoint
 

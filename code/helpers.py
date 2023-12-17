@@ -1,3 +1,4 @@
+# noel - A Christmas gift from slicedPear Ltd (Jez Graham) 12/2023 - All rights reserved
 
 import json
 import os
