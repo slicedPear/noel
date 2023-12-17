@@ -1,5 +1,9 @@
-![Screenshot 2023-12-17 at 23 12 41](https://github.com/slicedPear/noel/assets/153924178/368238c4-2968-46ff-84d8-8444d65f520b)
-
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" height="200px" srcset="https://github.com/slicedPear/noel/assets/153924178/368238c4-2968-46ff-84d8-8444d65f520b">
+    <img alt="logo" height="200px" src="https://github.com/slicedPear/noel/assets/153924178/368238c4-2968-46ff-84d8-8444d65f520b">
+  </picture>
+</div>
 
 # noel - AI Ability to Pay evaluation model by slicedPear Ltd.
 
