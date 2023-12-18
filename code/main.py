@@ -15,7 +15,7 @@ model_header = "noel - A little Festive Toy from Jez Graham / slicedPear Ltd - D
     "AI supported, 'agent-style' evaluation of customer data for potential financial difficulties/Ability to pay problems\n"
 receipt_name = "noelRunReceipt.txt"
 
-input_info = "./formatting/inputFormat1"        # Source input controls. Describe data-file contents and provide context to the agent here. (JSON format)
+input_info = "./formatting/inputFormat2"        # Source input controls. Describe data-file contents and provide context to the agent here. (JSON format)
 
 # List of model variations (chatGPT - hosted, Llama - local)
 # 2 model interfaces implemented:
