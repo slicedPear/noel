@@ -109,6 +109,10 @@ Navigate to or create a suitable directory for your local install of the project
 git clone https://github.com/slicedPear/noel.git
 ```
 
+Navigate to the newly created noel directory 
+```commandline
+cd noel
+```
 We'd advise using a virtual environment to ensure dependency versions remain aligned and do not conflict with your other projects. 
 
 Create and activate a virtual environment
@@ -129,14 +133,14 @@ venv\Scripts\activate.bat
 
 Dependencies are captured and can be batch installed by issuing the command
 ```commandline
-'pip install -r requirements.txt'
+pip install -r requirements.txt
 ```
 
 ## Setup environment variables
 noel pulls from environmental variables for sensitive sources - in this case, your chatGPT key.
 
 Create a ".env" file or rename ".env.example"
-You'll see a placeholder for your chatGPT API key - paste this between the quotes and you're ready to go. It should look something like:
+You'll see a placeholder for your chatGPT API key in ".env.example" - paste your key between the quotes and you're ready to go. Once you're done, you should have a .env file in the root directory that includes:
 ```python
 'OPENAI_API_KEY = "Your Key Here"'
 ```
