@@ -135,6 +135,7 @@ Dependencies are captured and can be batch installed by issuing the command
 ```commandline
 pip install -r requirements.txt
 ```
+from within the noel directory
 
 ## Setup environment variables
 noel pulls from environmental variables for sensitive sources - in this case, your chatGPT key.
