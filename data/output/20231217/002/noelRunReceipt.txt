@@ -1,5 +1,0 @@
-noel - A little Festive Toy from Jez Graham / slicedPear Ltd - December 2023
-AI supported, 'agent-style' evaluation of customer data for potential financial difficulties/Ability to pay problems
-
-Run : 2023/12/17 - 21:28:39
-Model Deployed : llama
