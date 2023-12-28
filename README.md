@@ -56,17 +56,17 @@ ollama run Mistral
 and waiting for the download to complete.
 
 
-## Output Example
+## Examples
 Sample input/output can be found in the data/samples folder. Input is flexible and supported by context provided in the driver json file (noel/formatting). Noel will provide a determination for further examination and reasoning for that outcome.
 
-###Input Example:
+### Input Example:
 
 |cutomer|ref,dunning_entries|bureau_arrears|bureau_balance|balance,Notes|
 |---|---|---|---|---|
 |"00001"|4|"Yes"|£300|£250|"Customer is injured and cannot work| Has made promise to pay on 17/12/2023."|
 |"00006"|2|"No"|£0|£230|"Vulnerable customer - housebound"|
 
-###Noel Output Example:
+### Output Example:
 
 |customer_ref|ATP_risk|Risk_confidence|reasoning|
 |---|---|---|---|
