@@ -1,4 +1,4 @@
-# noel - A little Festive gift/toy from Jez Graham / slicedPear Ltd - December 2023
+# noel - A little Festive gift/toy from Jez Graham / slicedPear Ltd - December 2023 - See Licence
 # A small project leveraging AI agents in the role of Debt/Collections advisors
 # to support the identification of customers in debt, or not yet in debt
 # who may be experiencing financial difficulty or stress
