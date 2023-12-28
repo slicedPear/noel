@@ -60,14 +60,16 @@ and waiting for the download to complete.
 Sample input/output can be found in the data/samples folder. Input is flexible and supported by context provided in the driver json file (noel/formatting). Noel will provide a determination for further examination and reasoning for that outcome.
 
 ###Input Example:
-|---|---|---|---|---|
+
 |cutomer|ref,dunning_entries|bureau_arrears|bureau_balance|balance,Notes|
+|---|---|---|---|---|
 |"00001"|4|"Yes"|£300|£250|"Customer is injured and cannot work| Has made promise to pay on 17/12/2023."|
 |"00006"|2|"No"|£0|£230|"Vulnerable customer - housebound"|
 
 ###Noel Output Example:
-|---|---|---|---|
+
 |customer_ref|ATP_risk|Risk_confidence|reasoning|
+|---|---|---|---|
 |00001|True|9|"The customer has a high dunning_entries count and is currently injured and unable to work. Although they have made a promise to pay on a specific date, there is uncertainty about their ability to fulfill this commitment. Therefore, there is a high risk that the customer may struggle to pay."|
 |00006|False|8|"The customer has 2 dunning entries, but there are no bureau arrears or balance owed to other creditors. The note states that the customer is a vulnerable customer and is housebound, but there is no indication of financial problems. Therefore, the customer is not considered to be struggling to pay."|
 
