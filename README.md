@@ -10,7 +10,7 @@
 ## What is Noel?
 **"Noel" is a small Christmas gift / toy from Jez Graham and slicedPear Ltd.**
 
-Provided as-is and for experimentation and to promote discussion, Noel is an AI supported project to assess customer data and determine whether they may be suffering from Financial stress or experiencing difficulty in making/maintaining payments on a credit service provided.
+Provided as-is for experimentation and to promote discussion, Noel is an AI supported project to assess customer data and determine whether they may be suffering from Financial stress or experiencing difficulty in making/maintaining payments on a credit service provided.
 
 Working, at scale, through a wealth of customer data has traditionally been difficult - significant behavioural and status indicators are often buried in unformatted free-text and notes fields and a meaningful review also needs internal and external characteristics to be considered and understood. This has always been a challenge, requiring high resource and time commitments and as a result, such activities were carried out infrequently or even avoided. 
 
