@@ -115,7 +115,7 @@ and specify input and output files/locations within the inputformat json file - 
 ```
 
 ## Installation
-Just a few steps to get you up and running with Noel.
+Just a few steps to get you up and running with Noel, assuming python is already installed.
 
 **Using an open terminal or command line prompt:**
 
