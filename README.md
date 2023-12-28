@@ -57,7 +57,7 @@ and waiting for the download to complete.
 
 
 ## Examples
-Sample input/output can be found in the data/samples folder. Input is flexible and supported by context provided in the driver json file (noel/formatting). Noel will provide a determination for further examination and reasoning for that outcome.
+Sample input/output can be found in the [data/samples folder](../data/samples). Input is flexible and supported by context provided in the driver json file ([formatting](../formatting)). Noel will provide a determination for further examination and reasoning for that outcome.
 
 ### Input Example:
 
