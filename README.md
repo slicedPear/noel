@@ -12,12 +12,12 @@
 
 Provided as-is for experimentation and to promote discussion, Noel is an AI supported project to assess customer data and determine whether they may be suffering from Financial stress or experiencing difficulty in making/maintaining payments on a credit service provided.
 
-Working, at scale, through a wealth of customer data has traditionally been difficult - significant behavioural and status indicators are often buried in unformatted free-text and notes fields and a meaningful review also needs internal and external characteristics to be considered and understood. This has always been a challenge, requiring high resource and time commitments and as a result, such activities were carried out infrequently or even avoided. 
+Working, at scale, through a wealth of customer data has traditionally been difficult - significant behavioural and status indicators are often buried in unformatted free-text and notes fields and a meaningful review also needs internal and external characteristics to be considered and understood. This has always been a challenge, requiring high resource and time commitments and as a result, such activities would be carried out infrequently or even avoided. 
 
 Through the use of AI agents, Noel can heuristically evaluate datasets, including free text and notes fields and provide a determination on the possibility of ability to pay (ATP) problems - potentially making continual, proactive financially vulnerable customer identification and support a practical reality. This creates the potential to take away a lot of heavy lifting and identify a priority sub-set for direct evaluation and strategic support.
 
 ## What does Noel do?
-Noel takes user-defined CSV files of customer data, along with user context and acting as a collections agent, evaluates them for potential signs of financial stress or ability to pay (ATP) problems. The agent will provide a view of "Ability to Pay" risk (ATP_Risk - True/False), Reasoning behind the decision (Reasoning - string) and a confidence score (0 - 10 on the decision made)
+Noel takes user-defined CSV files of customer data, along with user context and, acting as a collections agent evaluates them for potential signs of financial stress or ability to pay (ATP) problems. The agent will provide a view of "Ability to Pay" risk (ATP_Risk - True/False), Reasoning behind the decision (Reasoning - string) and a confidence score (0 - 10 on the decision made)
 
 ## Why free?
 Why not? 
