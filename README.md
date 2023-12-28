@@ -42,8 +42,8 @@ selected_model = model_list[active_model]
 ### chatGPT 3.5 Turbo
 Requires a commercial account and API key. This key is pulled from environmental variables - place your API key in a .env file (as shown in ".env.example"). chatGPT charging is on a token-use basis. Make sure you are aware of run costs (though for small/moderate testing these are likely to be low). Evaluation is done server-side at openai.com
 
-### Llama (specifically Mistral 7b)
-Meta's Llama is open-source and can be run locally. For now - this model is Mac only, as it relies on a local ollama server ([ollama.ai](https://ollama.ai) - please support this project). Evaluation is local and needs a fast machine(!), but has the advantage of running 100% locally and is free.
+### Llama based (specifically Mistral 7b)
+Meta's Llama and variants are open-source and can be run locally. For now - this option is Mac only, as it relies on a local ollama server ([ollama.ai](https://ollama.ai) - please support this project). Evaluation is local and needs a fast machine(!), but has the advantage of running 100% locally and is free.
 
 Download and install ollama, if you wish to utilise Llama models or variants. The Noel code is currently configured to use the Mistral 7b model, but ollama supports a range of models - check the website for options and this can be changed in the source, easily. Mistral is (currently) the best-performing for the size and memory footprint.
 
@@ -54,6 +54,22 @@ ollama run Mistral
 ```
 
 and waiting for the download to complete.
+
+
+## Output Example
+Sample input/output can be found in the data/samples folder. Input is flexible and supported by context provided in the driver json file (noel/formatting). Noel will provide a determination for further examination and reasoning for that outcome.
+
+###Input Example:
+|---|---|---|---|---|
+|cutomer|ref,dunning_entries|bureau_arrears|bureau_balance|balance,Notes|
+|"00001"|4|"Yes"|£300|£250|"Customer is injured and cannot work| Has made promise to pay on 17/12/2023."|
+|"00006"|2|"No"|£0|£230|"Vulnerable customer - housebound"|
+
+###Noel Output Example:
+|---|---|---|---|
+|customer_ref|ATP_risk|Risk_confidence|reasoning|
+|00001|True|9|"The customer has a high dunning_entries count and is currently injured and unable to work. Although they have made a promise to pay on a specific date, there is uncertainty about their ability to fulfill this commitment. Therefore, there is a high risk that the customer may struggle to pay."|
+|00006|False|8|"The customer has 2 dunning entries, but there are no bureau arrears or balance owed to other creditors. The note states that the customer is a vulnerable customer and is housebound, but there is no indication of financial problems. Therefore, the customer is not considered to be struggling to pay."|
 
 ## Batching
 Noel can batch-process. To reduce token usage, a max batch size can be set and processing will be handled in rounds - this is faster and lighter than handling each record in sequence. Noel can also start and end as specified points in the dataset - this allows for re-runs of part sets, or for continuation of an aborted run.
