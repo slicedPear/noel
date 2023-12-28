@@ -101,7 +101,7 @@ Point main.py at your chosen inputformat file
 input_info = "./formatting/inputFormat1"
 ```
 
-and specify input and output files/locations within the inputformat json file - this allows for rapid switching between datasets. Output locations will be auto-created under *YYYYMMDD* and an auto-iterating output folder of the for *NNN* (eg 001)
+and specify input and output files/locations within the inputformat json file - this allows for rapid switching between datasets. Output locations will be auto-created under *YYYYMMDD* and an auto-iterating output folder of the form *NNN* (eg output/20231218/001)
 
 ```python
 {
