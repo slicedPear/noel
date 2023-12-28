@@ -63,7 +63,7 @@ Sample input/output can be found in the [data/samples](../data/samples) folder. 
 
 |cutomer_ref|dunning_entries|bureau_arrears|bureau_balance|balance|Notes|
 |:---:|:---:|:---:|:---:|:---:|:---|
-|"00001"|4|"Yes"|£300|£250|"Customer is injured and cannot work| Has made promise to pay on 17/12/2023."|
+|"00001"|4|"Yes"|£300|£250|"Customer is injured and cannot work. Has made promise to pay on 17/12/2023."|
 |"00006"|2|"No"|£0|£230|"Vulnerable customer - housebound"|
 
 ### Output Example:
