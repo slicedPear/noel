@@ -131,9 +131,10 @@ Navigate to the newly created Noel directory
 ```commandline
 cd Noel
 ```
-We'd advise using a virtual environment to ensure dependency versions remain aligned and do not conflict with your other projects. 
 
 ### Create and activate a virtual environment
+
+We'd advise using a virtual environment to ensure dependency versions remain aligned and do not conflict with your other projects. 
 
 Create:
 ```commandline
