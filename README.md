@@ -119,7 +119,7 @@ Just a few steps to get you up and running with Noel, assuming python is already
 
 **Using an open terminal or command line prompt:**
 
-## Clone this GIT
+### Clone this GIT
 
 Navigate to or create a suitable directory for your local install of the project (the Noel subdirectory and structure will be created for you)
 
@@ -133,7 +133,7 @@ cd Noel
 ```
 We'd advise using a virtual environment to ensure dependency versions remain aligned and do not conflict with your other projects. 
 
-Create and activate a virtual environment
+### Create and activate a virtual environment
 
 Create:
 ```commandline
@@ -149,13 +149,15 @@ Windows (cmd):
 venv\Scripts\activate.bat
 ```
 
+### Install Dependencies
+
 Dependencies are captured and can be batch-installed by issuing the command
 ```commandline
 pip install -r requirements.txt
 ```
 from within the Noel directory
 
-## Setup environment variables
+### Setup environment variables
 Noel pulls from environmental variables for sensitive sources - in this case, your chatGPT key.
 
 Create a ".env" file or rename ".env.example"
