@@ -119,7 +119,7 @@ Just a few steps to get you up and running with Noel, assuming python is already
 
 **Using an open terminal or command line prompt:**
 
-## Clon3 this GIT
+## Clone this GIT
 
 Navigate to or create a suitable directory for your local install of the project (the Noel subdirectory and structure will be created for you)
 
